@@ -1,0 +1,39 @@
+entry = {
+  bundle = AppList;
+  cell = PSLinkCell;
+  icon = "/Library/PreferenceLoader/Preferences/AutoLaunch.png";
+  isController = 1;
+  label = "AutoLaunch";
+  ALSettingsPath = "/var/mobile/Library/Preferences/com.ziacke.autolaunch.plist";
+  ALSettingsKeyPrefix = "Settings-";
+  ALChangeNotification = "com.rpetrich.applist.sample.notification";
+  ALAllowsSelection = 1;
+  ALSectionDescriptors = (
+  	{
+  	  items = (
+  	    {
+  	      text = "Ziacke";
+  	      image = "/Library/PreferenceLoader/Preferences/ziacke.png";
+  	      action = "launchURL";
+  	      url = "http://www.chenzhijie.cn/";
+  	    }
+  	  );
+  	  "footer-title" = "Tap to visit author's website";
+  	},
+  	/*{
+  	  title = "System Applications";
+  	  predicate = "isSystemApplication = TRUE";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	},*/
+  	{
+  	  title = "Auto Launch App When Crashed";
+  	  predicate = "isSystemApplication = FALSE";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	  "footer-title" = "© 2016-2017 Ziacke";
+  	}
+  );
+};
