@@ -2,10 +2,10 @@ Package: ziacke
 Name: AutoLaunch
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: AutoLaunch Crashed App!
 Maintainer: ziacke
 Author: ziacke
 Section: Tweaks
 Depends: mobilesubstrate, applist (>= 1.4.1), firmware (>= 3.0), preferenceloader
-Version: 0.0.1-13+debug
+Version: 0.0.1-14+debug
 Installed-Size: 152
